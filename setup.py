@@ -121,7 +121,6 @@ class BuildExtension(build_ext):
             # Build commands
             hip_build = f"/usr/bin/make     -f make.gen.hipMAGMA    -j {cpus}"
             so_build =  f"/usr/bin/make     lib/libmagma.so         -j {cpus} MKLROOT={mkl_root}"
-            testing =   f"/usr/bin/make     testing/testing_dgemm   -j {cpus} MKLROOT={mkl_root}"
             
             try:
                 print(subprocess_run(hip_build, cwd=ROOT_DIR))
@@ -134,14 +133,6 @@ class BuildExtension(build_ext):
             try:
                 print(subprocess_run(so_build, cwd=ROOT_DIR))
                 print("End of main build")
-            except Exception as e:
-                raise RuntimeError(f"Error running MAGMA library build comand: {e}") from e
-
-                
-            try:
-                subprocess_run(testing, cwd=ROOT_DIR)
-                print("End of testing build")
-
             except Exception as e:
                 raise RuntimeError(f"Error running MAGMA library build comand: {e}") from e
             
