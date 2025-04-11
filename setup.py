@@ -4,6 +4,7 @@ from setuptools.command.build_ext import build_ext
 import setuptools.command.install
 from setuptools.dist import Distribution
 
+import re
 import glob
 import os
 import shutil
@@ -21,7 +22,7 @@ MAGMA_VERSION = "2.9.0"
 def detect_gpu_arch():
     if os.getenv("ROCM_PATH") != "" and os.path.exists(os.path.join(os.getenv("ROCM_PATH"), "bin", "hipcc")):
         return "rocm"
-    elif os.getenv("CUDA_HOME") != "" and os.path.exists(os.path.join(os.getenv("ROCM_PATH"), "bin", "nvcc")):
+    elif os.getenv("CUDA_HOME") != "" and os.path.exists(os.path.join(os.getenv("CUDA_HOME"), "bin", "nvcc")):
         return "cuda"
     else:
         print("No CUDA or ROCm installation found. Building for CPU.")
@@ -39,21 +40,43 @@ def find_library(header):
         
     print(f"{searching_for}. Didn't find in Magma Include.")
 
-
-def get_version():
-    with open(ROOT_DIR / "magma/version.txt") as f:
-        version = f.readline().strip()
-    sha = "Unknown"
-
+def get_version(arch):
+    version = "2.9.0"
+        
     try:
-        sha = subprocess.check_output(["git", "rev-parse", "HEAD"], cwd=str(ROOT_DIR)).decode("ascii").strip()
+        # Get version using current branch name. Will only work when building from release branch.
+        branch_name = subprocess.run(["git", "rev-parse", "--abbrev-ref", "HEAD"], capture_output=True, text=True).stdout.strip()
+
+        # Regular expression pattern to match 'vX.Y.Z'
+        pattern = r'v(\d+\.\d+\.\d+)'
+        match = re.search(pattern, branch_name)
+
+        version = match.group(1) if match else None # Sets version as 'X.Y.Z'
+
     except Exception:
+        print("Could not find version from branch name.")
         pass
 
-    if os.getenv("BUILD_VERSION"):
-        version = os.getenv("BUILD_VERSION")
-    elif sha != "Unknown":
-        version += "+" + sha[:7]
+    try:
+        sha = subprocess.run(["git", "rev-parse", "HEAD"], capture_output=True, text=True).stdout.strip()
+    except Exception:
+        print("Could not find git SHA from branch name.")
+        pass
+
+    if arch=='rocm':
+        try:
+        
+            with open(os.path.join(os.getenv("ROCM_PATH"), ".info", "version")) as file:
+                rocm_version = file.readline().strip() 
+            
+            pattern = r'(\d+\.\d+\.\d+)' # Sets version as 'X.Y.Z' from something like X.Y.Z-AB
+            match = re.search(pattern, rocm_version)
+
+            version += f"+{match.group(1)}" if match else None  
+        except Exception:
+            print("Could not find rocm version from rocm installation.")
+            pass
+    
 
     return version, sha
 
@@ -223,9 +246,8 @@ def configure_extension_build():
 
 if __name__ == "__main__":
 
-    detect_gpu_arch()
-    #version, sha = get_version()
-    version = '2.9.0'
+    arch = detect_gpu_arch()
+    version, sha = get_version(arch)
 
     print(f"Building wheel {PACKAGE_NAME}-{version}")
 
@@ -258,6 +280,5 @@ if __name__ == "__main__":
         },
         ext_modules=extensions,
         include_package_data=True,
-        python_requires=">=3.9",
         cmdclass=cmdclass,
     )
