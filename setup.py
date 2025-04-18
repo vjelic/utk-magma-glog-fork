@@ -1,8 +1,7 @@
-from setuptools import Extension, find_packages, setup
+from setuptools import find_packages, setup
 from setuptools.command.sdist import sdist
-from setuptools.command.build_ext import build_ext
+from setuptools.command.build_py import build_py
 import setuptools.command.install
-from setuptools.dist import Distribution
 
 import re
 import glob
@@ -51,7 +50,7 @@ def get_version(arch):
         pattern = r'v(\d+\.\d+\.\d+)'
         match = re.search(pattern, branch_name)
 
-        version = match.group(1) if match else None # Sets version as 'X.Y.Z'
+        version = match.group(1) if match else "2.9.0" # Sets version as 'X.Y.Z'
 
     except Exception:
         print("Could not find version from branch name.")
@@ -72,11 +71,11 @@ def get_version(arch):
             pattern = r'(\d+\.\d+\.\d+)' # Sets version as 'X.Y.Z' from something like X.Y.Z-AB
             match = re.search(pattern, rocm_version)
 
-            version += f"+{match.group(1)}" if match else None  
+            version += f"+rocm{match.group(1)}" if match else ""  
         except Exception:
             print("Could not find rocm version from rocm installation.")
             pass
-    
+    print(version)
 
     return version, sha
 
@@ -100,9 +99,11 @@ def subprocess_run(command, cwd=None, env=None):
         print(e.stderr)
         raise
     
-class BuildExtension(build_ext):
-    """ A build extension class for the Magma Library. """
+class Build_CMake(setuptools.command.build_py.build_py):
+ 
+        
     def run(self):
+        print("Began run function")
 
         self.gpu_arch = detect_gpu_arch()
 
@@ -113,8 +114,9 @@ class BuildExtension(build_ext):
 
             cpus = str(int(os.cpu_count()))
 
-            mkl_root = '/opt/conda/envs/py_3.10'
-            os.environ["MKLROOT"] = '/opt/conda/envs/py_3.10'
+            assert os.environ["MKLROOT"] != "", "MKL installation not found. Please set MKLROOT."
+
+            mkl_root = os.environ["MKLROOT"] 
             subprocess.check_output('export PATH="${PATH}:/opt/rocm/bin"', shell=True)
 
             print("Building MAGMA for ROCm...")
@@ -180,15 +182,8 @@ class BuildExtension(build_ext):
         super().run()
 
 
-    def build_extension(self, ext):
-
-        ext.libraries.append(PACKAGE_NAME)
-        ext.include_dirs.append(MAGMA_INCLUDE)
-        ext.library_dirs.append(MAGMA_LIB)
-        
-        super().build_extension(ext)
-
 class clean(setuptools.Command):
+    
     user_options = []
 
     def initialize_options(self):
@@ -201,48 +196,13 @@ class clean(setuptools.Command):
         import glob
         import re
 
-
         shutil.rmtree(os.path.join(ROOT_DIR, "magma.egg-info"))  if os.path.exists(os.path.join(ROOT_DIR, "magma.egg-info")) else 0
         shutil.rmtree(os.path.join(ROOT_DIR, "build")) if os.path.exists(os.path.join(ROOT_DIR, "build")) else 0
         shutil.rmtree(os.path.join(ROOT_DIR, "dist")) if os.path.exists(os.path.join(ROOT_DIR, "dist")) else 0
+        os.remove(os.path.join(ROOT_DIR, "make.inc")) if os.path.exists(os.path.join(ROOT_DIR, "make.inc")) else 0
 
-class install(setuptools.command.install.install):
-    def run(self):
-        super().run()
+        # On ROCm install we do not 'unhipify' files when cleaning. This seems to be robust anyway.
 
-try:
-    from wheel.bdist_wheel import bdist_wheel
-except ImportError:
-    wheel = None
-else:
-    class wheel(bdist_wheel):
-
-        def write_wheelfile(self, *args, **kwargs):
-
-            super().write_wheelfile(*args, **kwargs)
-
-def configure_extension_build():
-
-    C = Extension(
-            "magma",
-            include_dirs=[MAGMA_INCLUDE], 
-            library_dirs=[MAGMA_LIB],
-            sources=['src/_C.c'],
-            language='c++'
-        )
-
-    cmdclass = {
-        "bdist_wheel": wheel,
-        "build_ext": BuildExtension,
-        "clean": clean,
-        "install": install,
-        "sdist": sdist,
-    }
-
-
-    extensions = [C]
-
-    return extensions, cmdclass
 
 if __name__ == "__main__":
 
@@ -254,31 +214,24 @@ if __name__ == "__main__":
     with open("README") as f:
         readme = f.read()
 
-    extensions, cmdclass = configure_extension_build()
-
-    dist = Distribution()
-    dist.script_name = os.path.basename(sys.argv[0])
-    dist.script_args = sys.argv[1:]
-    try:
-        dist.parse_command_line()
-    except setuptools.distutils.errors.DistutilsArgError as e:
-        print(e)
-        sys.exit(1)
+    cmdclass = {
+                    "build_py": Build_CMake,
+                    "clean": clean,
+                }
 
     setup(
         name=PACKAGE_NAME,
         version=version,
-        author="ICL",
+        author="ICL ",
+        url="https://github.com/icl-utk-edu/magma/tree/master",
         description="",
         long_description=readme,
         long_description_content_type="text/markdown",
         license="BSD-3-Clause",
         packages=find_packages(),
-        package_data={PACKAGE_NAME: ["lib/libmagma.so", "include/*.h"]},
+        package_data={"magma": ["lib/libmagma.so", "include/*.h"]},
         package_dir={'': '.'}, 
-        extras_require={
-        },
-        ext_modules=extensions,
         include_package_data=True,
+        python_requires=">=3.9",
         cmdclass=cmdclass,
     )
