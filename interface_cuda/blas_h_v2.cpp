@@ -122,7 +122,7 @@ magma_hgemm(
 		      (void*)&alpha, (void*)dA, HIP_R_16F, int(ldda),
 		      (void*)dB, HIP_R_16F, int(lddb),
 		      (void *)&beta,  (void*)dC, HIP_R_16F, int(lddc),
-		      HIP_R_16F,
+		      (hipblasComputeType_t)HIP_R_16F,
 	              #else
 	              (void*)&alpha, (void*)dA, HIPBLAS_R_16F, int(ldda),
                       (void*)dB, HIPBLAS_R_16F, int(lddb),
@@ -162,7 +162,7 @@ magma_hgemmx(
 		      (void*)&alpha, (void*)dA, HIP_R_16F, int(ldda),
                                      (void*)dB, HIP_R_16F, int(lddb),
 		      (void*)&beta,  (void*)dC, HIP_R_32F, int(lddc),
-		      HIP_R_32F,
+		      (hipblasComputeType_t)HIP_R_32F,
 	              #else
 	              (void*)&alpha, (void*)dA, HIPBLAS_R_16F, int(ldda),
                                      (void*)dB, HIPBLAS_R_16F, int(lddb),

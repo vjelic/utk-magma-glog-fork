@@ -407,7 +407,7 @@ magma_xhsgetrf_gpu(
 			    &c_neg_one, dAT_hp(j,     nextj), HIP_R_16F, int(lddat),
                                         dAT_hp(nextj, j    ), HIP_R_16F, int(lddat),
                             &c_one,     dAT_hp(nextj, nextj), HIP_R_16F, int(lddat),
-                            HIP_R_32F, ALGO);
+                            (hipblasComputeType_t)HIP_R_32F, ALGO);
                             #else
                             &c_neg_one, dAT_hp(j,     nextj), HIPBLAS_R_16F, int(lddat),
                                         dAT_hp(nextj, j    ), HIPBLAS_R_16F, int(lddat),
@@ -433,7 +433,7 @@ magma_xhsgetrf_gpu(
 			    &h_neg_one, dAT_hp(j,     nextj), HIP_R_16F, int(lddat),
                                         dAT_hp(nextj, j    ), HIP_R_16F, int(lddat),
                             &h_one,     dAT_hp(nextj, nextj), HIP_R_16F, int(lddat),
-                            HIP_R_16F, ALGO);
+                            (hipblasComputeType_t)HIP_R_16F, ALGO);
                             #else
                             &h_neg_one, dAT_hp(j,     nextj), HIPBLAS_R_16F, int(lddat),
                                         dAT_hp(nextj, j    ), HIPBLAS_R_16F, int(lddat),
@@ -498,7 +498,7 @@ magma_xhsgetrf_gpu(
 			    &c_neg_one, dAT_hp(j,     nextj+nextjb), HIP_R_16F, int(lddat),
                                         dAT_hp(nextj, j           ), HIP_R_16F, int(lddat),
                             &c_one,     dAT_hp(nextj, nextj+nextjb), HIP_R_16F, int(lddat),
-                            HIP_R_32F, ALGO);
+                            (hipblasComputeType_t)HIP_R_32F, ALGO);
                             #else
                             &c_neg_one, dAT_hp(j,     nextj+nextjb), HIPBLAS_R_16F, int(lddat),
                                         dAT_hp(nextj, j           ), HIPBLAS_R_16F, int(lddat),
@@ -524,7 +524,7 @@ magma_xhsgetrf_gpu(
 			    &h_neg_one, dAT_hp(j,     nextj+nextjb), HIP_R_16F, int(lddat),
                                         dAT_hp(nextj, j           ), HIP_R_16F, int(lddat),
                             &h_one,     dAT_hp(nextj, nextj+nextjb), HIP_R_16F, int(lddat),
-                            HIP_R_16F, ALGO);
+                            (hipblasComputeType_t)HIP_R_16F, ALGO);
                             #else
                             &h_neg_one, dAT_hp(j,     nextj+nextjb), HIPBLAS_R_16F, int(lddat),
                                         dAT_hp(nextj, j           ), HIPBLAS_R_16F, int(lddat),

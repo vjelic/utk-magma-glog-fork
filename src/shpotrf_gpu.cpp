@@ -59,7 +59,7 @@ magma_sgemm_fp16(
 			   (void*)&alpha, (void*)dhA, HIP_R_16F, (int)lddha,
                                   (void*)dhB, HIP_R_16F, (int)lddhb,
                            (void*)&beta,  (void*)dC,  HIP_R_32F, (int)lddc,
-                           HIP_R_32F, HIPBLAS_GEMM_DEFAULT);
+                           (hipblasComputeType_t)HIP_R_32F, HIPBLAS_GEMM_DEFAULT);
                            #else
 		           (void*)&alpha, (void*)dhA, HIPBLAS_R_16F, (int)lddha,
                                   (void*)dhB, HIPBLAS_R_16F, (int)lddhb,
