@@ -1,0 +1,780 @@
+{
+  "version": "2.1.0",
+  "runs": [
+    {
+      "tool": {
+        "driver": {
+          "name": "Glog.AI",
+          "organization": "Glog.AI",
+          "fullName": "Glog, Making software more secure",
+          "version": "1.0.0",
+          "semanticVersion": "1.0.0",
+          "informationUri": "https://www.glog.ai",
+          "rules": [
+            {
+              "id": "glog-cebffc7e-2890-4ad6-a481-4954550db56d",
+              "help": {
+                "text": ""
+              },
+              "properties": {
+                "tags": [
+                  "DS121708"
+                ]
+              }
+            },
+            {
+              "id": "glog-1d646926-8fac-4e89-a9d9-af0af7f6914e",
+              "help": {
+                "text": ""
+              },
+              "properties": {
+                "tags": [
+                  "DS121708"
+                ]
+              }
+            },
+            {
+              "id": "glog-4dce771b-c8ec-467b-b266-3d9a3e668e42",
+              "help": {
+                "text": ""
+              },
+              "properties": {
+                "tags": [
+                  "DS121708"
+                ]
+              }
+            },
+            {
+              "id": "glog-43dccc0f-8387-45b7-aee8-7d1356258de0",
+              "help": {
+                "text": ""
+              },
+              "properties": {
+                "tags": [
+                  "DS137138"
+                ]
+              }
+            },
+            {
+              "id": "glog-4a5a55d6-06b6-472e-92f4-e9cfd9ae61bf",
+              "help": {
+                "text": ""
+              },
+              "properties": {
+                "tags": [
+                  "DS137138"
+                ]
+              }
+            },
+            {
+              "id": "glog-03de624c-f42e-48be-b7b7-157bac0bd9f5",
+              "help": {
+                "text": ""
+              },
+              "properties": {
+                "tags": [
+                  "DS148264"
+                ]
+              }
+            },
+            {
+              "id": "glog-33c5aa26-1ed6-4e98-9c73-c9982f292467",
+              "help": {
+                "text": ""
+              },
+              "properties": {
+                "tags": [
+                  "DS148264"
+                ]
+              }
+            },
+            {
+              "id": "glog-81e92ba1-9d98-485f-98b3-fc553ea9acfc",
+              "help": {
+                "text": ""
+              },
+              "properties": {
+                "tags": [
+                  "DS148264"
+                ]
+              }
+            },
+            {
+              "id": "glog-1782e3af-d70f-42af-84ec-ccf15679da51",
+              "help": {
+                "text": ""
+              },
+              "properties": {
+                "tags": [
+                  "DS148264"
+                ]
+              }
+            },
+            {
+              "id": "glog-7f6d513f-673b-4909-ad44-e7502da4865e",
+              "help": {
+                "text": ""
+              },
+              "properties": {
+                "tags": [
+                  "DS148264"
+                ]
+              }
+            },
+            {
+              "id": "glog-796db7d7-bf32-4856-ab1d-ce1a39dd3a0e",
+              "help": {
+                "text": ""
+              },
+              "properties": {
+                "tags": [
+                  "DS148264"
+                ]
+              }
+            },
+            {
+              "id": "glog-c026326e-0f84-4605-8c97-fbd065b2796e",
+              "help": {
+                "text": ""
+              },
+              "properties": {
+                "tags": [
+                  "DS148264"
+                ]
+              }
+            },
+            {
+              "id": "glog-24174a18-9fc9-4bc4-b26c-3cc66ca73ead",
+              "help": {
+                "text": ""
+              },
+              "properties": {
+                "tags": [
+                  "DS148264"
+                ]
+              }
+            },
+            {
+              "id": "glog-d0eb6ced-6c70-4cc3-9fed-a903d3ae0c16",
+              "help": {
+                "text": ""
+              },
+              "properties": {
+                "tags": [
+                  "DS148264"
+                ]
+              }
+            }
+          ],
+          "language": "en-US",
+          "contents": [
+            "localizedData",
+            "nonLocalizedData"
+          ],
+          "isComprehensive": false
+        }
+      },
+      "language": "en-US",
+      "results": [
+        {
+          "ruleId": "glog-1d646926-8fac-4e89-a9d9-af0af7f6914e",
+          "kind": "fail",
+          "level": "note",
+          "message": {},
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "testing/testing_ztrsm.cpp"
+                },
+                "region": {
+                  "startLine": 213,
+                  "startColumn": 12,
+                  "endLine": 213,
+                  "endColumn": 63,
+                  "charOffset": 9300,
+                  "charLength": 51,
+                  "snippet": {
+                    "text": "memcpy( hX, hBdev, sizeB*sizeof(magmaDoubleComplex)",
+                    "rendered": {
+                      "text": "memcpy( hX, hBdev, sizeB*sizeof(magmaDoubleComplex)",
+                      "markdown": "`memcpy( hX, hBdev, sizeB*sizeof(magmaDoubleComplex)`"
+                    }
+                  },
+                  "sourceLanguage": "cpp"
+                }
+              }
+            }
+          ],
+          "fixes": [
+            {
+              "description": {
+                "text": "There are a number of conditions in which memcpy can introduce a vulnerability (mismatched buffer sizes, null pointers, etc.). More secure alternitives perform additional validation of the source and destination buffer"
+              },
+              "artifactChanges": [
+                {
+                  "artifactLocation": {
+                    "uri": "testing/testing_ztrsm.cpp"
+                  },
+                  "replacements": [
+                    {
+                      "deletedRegion": {
+                        "charOffset": 9300,
+                        "charLength": 51
+                      },
+                      "insertedContent": {
+                        "text": "memcpy_s( hX, <size of  hX>,  hBdev,  sizeB*sizeof(magmaDoubleComplex)"
+                      }
+                    }
+                  ]
+                }
+              ]
+            }
+          ],
+          "properties": {
+            "DevSkimSeverity": "BestPractice",
+            "DevSkimConfidence": "High",
+            "tags": [
+              "API.DangerousAPI.ProblematicFunction"
+            ]
+          }
+        },
+        {
+          "ruleId": "glog-4dce771b-c8ec-467b-b266-3d9a3e668e42",
+          "kind": "fail",
+          "level": "note",
+          "message": {},
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "testing/testing_ztrsm.cpp"
+                },
+                "region": {
+                  "startLine": 230,
+                  "startColumn": 16,
+                  "endLine": 230,
+                  "endColumn": 70,
+                  "charOffset": 10206,
+                  "charLength": 54,
+                  "snippet": {
+                    "text": "memcpy( hX, hBlapack, sizeB*sizeof(magmaDoubleComplex)",
+                    "rendered": {
+                      "text": "memcpy( hX, hBlapack, sizeB*sizeof(magmaDoubleComplex)",
+                      "markdown": "`memcpy( hX, hBlapack, sizeB*sizeof(magmaDoubleComplex)`"
+                    }
+                  },
+                  "sourceLanguage": "cpp"
+                }
+              }
+            }
+          ],
+          "fixes": [
+            {
+              "description": {
+                "text": "There are a number of conditions in which memcpy can introduce a vulnerability (mismatched buffer sizes, null pointers, etc.). More secure alternitives perform additional validation of the source and destination buffer"
+              },
+              "artifactChanges": [
+                {
+                  "artifactLocation": {
+                    "uri": "testing/testing_ztrsm.cpp"
+                  },
+                  "replacements": [
+                    {
+                      "deletedRegion": {
+                        "charOffset": 10206,
+                        "charLength": 54
+                      },
+                      "insertedContent": {
+                        "text": "memcpy_s( hX, <size of  hX>,  hBlapack,  sizeB*sizeof(magmaDoubleComplex)"
+                      }
+                    }
+                  ]
+                }
+              ]
+            }
+          ],
+          "properties": {
+            "DevSkimSeverity": "BestPractice",
+            "DevSkimConfidence": "High",
+            "tags": [
+              "API.DangerousAPI.ProblematicFunction"
+            ]
+          }
+        },
+        {
+          "ruleId": "glog-43dccc0f-8387-45b7-aee8-7d1356258de0",
+          "kind": "fail",
+          "level": "warning",
+          "message": {},
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "control/magma_threadsetting.cpp"
+                },
+                "region": {
+                  "startLine": 54,
+                  "startColumn": 12,
+                  "endLine": 54,
+                  "endColumn": 36,
+                  "charOffset": 1451,
+                  "charLength": 24,
+                  "snippet": {
+                    "text": "http://stackoverflow.com",
+                    "rendered": {
+                      "text": "http://stackoverflow.com",
+                      "markdown": "`http://stackoverflow.com`"
+                    }
+                  },
+                  "sourceLanguage": "cpp"
+                }
+              }
+            }
+          ],
+          "fixes": [
+            {
+              "description": {
+                "text": "An HTTP-based URL without TLS was detected."
+              },
+              "artifactChanges": [
+                {
+                  "artifactLocation": {
+                    "uri": "control/magma_threadsetting.cpp"
+                  },
+                  "replacements": [
+                    {
+                      "deletedRegion": {
+                        "charOffset": 1451,
+                        "charLength": 24
+                      },
+                      "insertedContent": {
+                        "text": "https://stackoverflow.com"
+                      }
+                    }
+                  ]
+                }
+              ]
+            }
+          ],
+          "properties": {
+            "DevSkimSeverity": "Moderate",
+            "DevSkimConfidence": "High",
+            "tags": [
+              "ThreatModel.Integration.HTTP"
+            ]
+          }
+        },
+        {
+          "ruleId": "glog-4a5a55d6-06b6-472e-92f4-e9cfd9ae61bf",
+          "kind": "fail",
+          "level": "warning",
+          "message": {},
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "control/trace.cpp"
+                },
+                "region": {
+                  "startLine": 206,
+                  "startColumn": 11,
+                  "endLine": 206,
+                  "endColumn": 35,
+                  "charOffset": 6955,
+                  "charLength": 24,
+                  "snippet": {
+                    "text": "http://wiki.inkscape.org",
+                    "rendered": {
+                      "text": "http://wiki.inkscape.org",
+                      "markdown": "`http://wiki.inkscape.org`"
+                    }
+                  },
+                  "sourceLanguage": "cpp"
+                }
+              }
+            }
+          ],
+          "fixes": [
+            {
+              "description": {
+                "text": "An HTTP-based URL without TLS was detected."
+              },
+              "artifactChanges": [
+                {
+                  "artifactLocation": {
+                    "uri": "control/trace.cpp"
+                  },
+                  "replacements": [
+                    {
+                      "deletedRegion": {
+                        "charOffset": 6955,
+                        "charLength": 24
+                      },
+                      "insertedContent": {
+                        "text": "https://wiki.inkscape.org"
+                      }
+                    }
+                  ]
+                }
+              ]
+            }
+          ],
+          "properties": {
+            "DevSkimSeverity": "Moderate",
+            "DevSkimConfidence": "High",
+            "tags": [
+              "ThreatModel.Integration.HTTP"
+            ]
+          }
+        },
+        {
+          "ruleId": "glog-03de624c-f42e-48be-b7b7-157bac0bd9f5",
+          "kind": "fail",
+          "level": "error",
+          "message": {},
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "example/example_v2.cpp"
+                },
+                "region": {
+                  "startLine": 34,
+                  "startColumn": 54,
+                  "endLine": 34,
+                  "endColumn": 62,
+                  "charOffset": 1322,
+                  "charLength": 8,
+                  "snippet": {
+                    "text": "RAND_MAX",
+                    "rendered": {
+                      "text": "RAND_MAX",
+                      "markdown": "`RAND_MAX`"
+                    }
+                  },
+                  "sourceLanguage": "cpp"
+                }
+              }
+            }
+          ],
+          "properties": {
+            "DevSkimSeverity": "Important",
+            "DevSkimConfidence": "High",
+            "tags": [
+              "Cryptography.PRNG.Weak"
+            ]
+          }
+        },
+        {
+          "ruleId": "glog-33c5aa26-1ed6-4e98-9c73-c9982f292467",
+          "kind": "fail",
+          "level": "error",
+          "message": {},
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "example/example_v2.cpp"
+                },
+                "region": {
+                  "startLine": 34,
+                  "startColumn": 35,
+                  "endLine": 34,
+                  "endColumn": 40,
+                  "charOffset": 1303,
+                  "charLength": 5,
+                  "snippet": {
+                    "text": "rand(",
+                    "rendered": {
+                      "text": "rand(",
+                      "markdown": "`rand(`"
+                    }
+                  },
+                  "sourceLanguage": "cpp"
+                }
+              }
+            }
+          ],
+          "properties": {
+            "DevSkimSeverity": "Important",
+            "DevSkimConfidence": "High",
+            "tags": [
+              "Cryptography.PRNG.Weak"
+            ]
+          }
+        },
+        {
+          "ruleId": "glog-81e92ba1-9d98-485f-98b3-fc553ea9acfc",
+          "kind": "fail",
+          "level": "error",
+          "message": {},
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "example/example_v2.cpp"
+                },
+                "region": {
+                  "startLine": 33,
+                  "startColumn": 54,
+                  "endLine": 33,
+                  "endColumn": 62,
+                  "charOffset": 1241,
+                  "charLength": 8,
+                  "snippet": {
+                    "text": "RAND_MAX",
+                    "rendered": {
+                      "text": "RAND_MAX",
+                      "markdown": "`RAND_MAX`"
+                    }
+                  },
+                  "sourceLanguage": "cpp"
+                }
+              }
+            }
+          ],
+          "properties": {
+            "DevSkimSeverity": "Important",
+            "DevSkimConfidence": "High",
+            "tags": [
+              "Cryptography.PRNG.Weak"
+            ]
+          }
+        },
+        {
+          "ruleId": "glog-1782e3af-d70f-42af-84ec-ccf15679da51",
+          "kind": "fail",
+          "level": "error",
+          "message": {},
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "example/example_v1.cpp"
+                },
+                "region": {
+                  "startLine": 34,
+                  "startColumn": 54,
+                  "endLine": 34,
+                  "endColumn": 62,
+                  "charOffset": 1285,
+                  "charLength": 8,
+                  "snippet": {
+                    "text": "RAND_MAX",
+                    "rendered": {
+                      "text": "RAND_MAX",
+                      "markdown": "`RAND_MAX`"
+                    }
+                  },
+                  "sourceLanguage": "cpp"
+                }
+              }
+            }
+          ],
+          "properties": {
+            "DevSkimSeverity": "Important",
+            "DevSkimConfidence": "High",
+            "tags": [
+              "Cryptography.PRNG.Weak"
+            ]
+          }
+        },
+        {
+          "ruleId": "glog-7f6d513f-673b-4909-ad44-e7502da4865e",
+          "kind": "fail",
+          "level": "error",
+          "message": {},
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "example/example_v2.cpp"
+                },
+                "region": {
+                  "startLine": 33,
+                  "startColumn": 35,
+                  "endLine": 33,
+                  "endColumn": 40,
+                  "charOffset": 1222,
+                  "charLength": 5,
+                  "snippet": {
+                    "text": "rand(",
+                    "rendered": {
+                      "text": "rand(",
+                      "markdown": "`rand(`"
+                    }
+                  },
+                  "sourceLanguage": "cpp"
+                }
+              }
+            }
+          ],
+          "properties": {
+            "DevSkimSeverity": "Important",
+            "DevSkimConfidence": "High",
+            "tags": [
+              "Cryptography.PRNG.Weak"
+            ]
+          }
+        },
+        {
+          "ruleId": "glog-796db7d7-bf32-4856-ab1d-ce1a39dd3a0e",
+          "kind": "fail",
+          "level": "error",
+          "message": {},
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "example/example_v1.cpp"
+                },
+                "region": {
+                  "startLine": 34,
+                  "startColumn": 35,
+                  "endLine": 34,
+                  "endColumn": 40,
+                  "charOffset": 1266,
+                  "charLength": 5,
+                  "snippet": {
+                    "text": "rand(",
+                    "rendered": {
+                      "text": "rand(",
+                      "markdown": "`rand(`"
+                    }
+                  },
+                  "sourceLanguage": "cpp"
+                }
+              }
+            }
+          ],
+          "properties": {
+            "DevSkimSeverity": "Important",
+            "DevSkimConfidence": "High",
+            "tags": [
+              "Cryptography.PRNG.Weak"
+            ]
+          }
+        },
+        {
+          "ruleId": "glog-c026326e-0f84-4605-8c97-fbd065b2796e",
+          "kind": "fail",
+          "level": "error",
+          "message": {},
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "example/example_v1.cpp"
+                },
+                "region": {
+                  "startLine": 33,
+                  "startColumn": 54,
+                  "endLine": 33,
+                  "endColumn": 62,
+                  "charOffset": 1204,
+                  "charLength": 8,
+                  "snippet": {
+                    "text": "RAND_MAX",
+                    "rendered": {
+                      "text": "RAND_MAX",
+                      "markdown": "`RAND_MAX`"
+                    }
+                  },
+                  "sourceLanguage": "cpp"
+                }
+              }
+            }
+          ],
+          "properties": {
+            "DevSkimSeverity": "Important",
+            "DevSkimConfidence": "High",
+            "tags": [
+              "Cryptography.PRNG.Weak"
+            ]
+          }
+        },
+        {
+          "ruleId": "glog-24174a18-9fc9-4bc4-b26c-3cc66ca73ead",
+          "kind": "fail",
+          "level": "error",
+          "message": {},
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "example/example_v1.cpp"
+                },
+                "region": {
+                  "startLine": 33,
+                  "startColumn": 35,
+                  "endLine": 33,
+                  "endColumn": 40,
+                  "charOffset": 1185,
+                  "charLength": 5,
+                  "snippet": {
+                    "text": "rand(",
+                    "rendered": {
+                      "text": "rand(",
+                      "markdown": "`rand(`"
+                    }
+                  },
+                  "sourceLanguage": "cpp"
+                }
+              }
+            }
+          ],
+          "properties": {
+            "DevSkimSeverity": "Important",
+            "DevSkimConfidence": "High",
+            "tags": [
+              "Cryptography.PRNG.Weak"
+            ]
+          }
+        },
+        {
+          "ruleId": "glog-d0eb6ced-6c70-4cc3-9fed-a903d3ae0c16",
+          "kind": "fail",
+          "level": "error",
+          "message": {},
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "testing/testing_zgemv_vbatched.cpp"
+                },
+                "region": {
+                  "startLine": 140,
+                  "startColumn": 33,
+                  "endLine": 140,
+                  "endColumn": 38,
+                  "charOffset": 5138,
+                  "charLength": 5,
+                  "snippet": {
+                    "text": "rand(",
+                    "rendered": {
+                      "text": "rand(",
+                      "markdown": "`rand(`"
+                    }
+                  },
+                  "sourceLanguage": "cpp"
+                }
+              }
+            }
+          ],
+          "properties": {
+            "DevSkimSeverity": "Important",
+            "DevSkimConfidence": "High",
+            "tags": [
+              "Cryptography.PRNG.Weak"
+            ]
+          }
+        }
+      ],
+      "newlineSequences": [
+        "\r\n",
+        "\n"
+      ]
+    }
+  ]
+}
