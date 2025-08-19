@@ -12,7 +12,7 @@
           "informationUri": "https://www.glog.ai",
           "rules": [
             {
-              "id": "glog-cebffc7e-2890-4ad6-a481-4954550db56d",
+              "id": "glog-d890fa5e-4627-4f35-8e2f-03bd268d159a",
               "help": {
                 "text": ""
               },
@@ -23,29 +23,18 @@
               }
             },
             {
-              "id": "glog-1d646926-8fac-4e89-a9d9-af0af7f6914e",
+              "id": "glog-6fd477f6-6708-4bef-885e-953bbefe6cf2",
               "help": {
                 "text": ""
               },
               "properties": {
                 "tags": [
-                  "DS121708"
+                  "DS161085"
                 ]
               }
             },
             {
-              "id": "glog-4dce771b-c8ec-467b-b266-3d9a3e668e42",
-              "help": {
-                "text": ""
-              },
-              "properties": {
-                "tags": [
-                  "DS121708"
-                ]
-              }
-            },
-            {
-              "id": "glog-43dccc0f-8387-45b7-aee8-7d1356258de0",
+              "id": "glog-ec00db16-10eb-4ced-8c8e-20c4bedca64a",
               "help": {
                 "text": ""
               },
@@ -56,7 +45,7 @@
               }
             },
             {
-              "id": "glog-4a5a55d6-06b6-472e-92f4-e9cfd9ae61bf",
+              "id": "glog-b32552f9-27d5-400f-bb64-c2e7a89b1d47",
               "help": {
                 "text": ""
               },
@@ -67,7 +56,40 @@
               }
             },
             {
-              "id": "glog-03de624c-f42e-48be-b7b7-157bac0bd9f5",
+              "id": "glog-81497cf1-ce16-4ea5-8078-f9271329bafe",
+              "help": {
+                "text": ""
+              },
+              "properties": {
+                "tags": [
+                  "DS121708"
+                ]
+              }
+            },
+            {
+              "id": "glog-f1065b89-7d67-42ed-abd4-21b93301b013",
+              "help": {
+                "text": ""
+              },
+              "properties": {
+                "tags": [
+                  "DS121708"
+                ]
+              }
+            },
+            {
+              "id": "glog-5985b6d8-08ad-4218-b6a8-fd6389f729c8",
+              "help": {
+                "text": ""
+              },
+              "properties": {
+                "tags": [
+                  "DS121708"
+                ]
+              }
+            },
+            {
+              "id": "glog-2bf740c3-daf6-4d8b-b456-ac1595c6b578",
               "help": {
                 "text": ""
               },
@@ -78,7 +100,7 @@
               }
             },
             {
-              "id": "glog-33c5aa26-1ed6-4e98-9c73-c9982f292467",
+              "id": "glog-8155eee3-deb7-4ec9-b458-d9a7b9f89f2b",
               "help": {
                 "text": ""
               },
@@ -89,7 +111,7 @@
               }
             },
             {
-              "id": "glog-81e92ba1-9d98-485f-98b3-fc553ea9acfc",
+              "id": "glog-76a9666b-adb7-4a8e-a109-38bee6d0ddfc",
               "help": {
                 "text": ""
               },
@@ -100,7 +122,7 @@
               }
             },
             {
-              "id": "glog-1782e3af-d70f-42af-84ec-ccf15679da51",
+              "id": "glog-b0bf939a-158f-4f07-8f4d-d33f5ffd3728",
               "help": {
                 "text": ""
               },
@@ -111,7 +133,7 @@
               }
             },
             {
-              "id": "glog-7f6d513f-673b-4909-ad44-e7502da4865e",
+              "id": "glog-1de07b21-765b-4c76-a965-156bf94767ab",
               "help": {
                 "text": ""
               },
@@ -122,7 +144,7 @@
               }
             },
             {
-              "id": "glog-796db7d7-bf32-4856-ab1d-ce1a39dd3a0e",
+              "id": "glog-8368152a-69a5-46a7-8269-86762c2f4a01",
               "help": {
                 "text": ""
               },
@@ -133,7 +155,7 @@
               }
             },
             {
-              "id": "glog-c026326e-0f84-4605-8c97-fbd065b2796e",
+              "id": "glog-9745ee4c-7ca2-473c-8dc9-bb9e16c2600b",
               "help": {
                 "text": ""
               },
@@ -144,7 +166,7 @@
               }
             },
             {
-              "id": "glog-24174a18-9fc9-4bc4-b26c-3cc66ca73ead",
+              "id": "glog-9352f8df-e792-4dc3-820c-935a47633126",
               "help": {
                 "text": ""
               },
@@ -155,13 +177,112 @@
               }
             },
             {
-              "id": "glog-d0eb6ced-6c70-4cc3-9fed-a903d3ae0c16",
+              "id": "glog-45e2f302-f3a6-4489-b44d-8de601d5cf78",
               "help": {
                 "text": ""
               },
               "properties": {
                 "tags": [
                   "DS148264"
+                ]
+              }
+            },
+            {
+              "id": "glog-42dd250a-0d72-4415-8cc2-4f967fc4d195",
+              "help": {
+                "text": ""
+              },
+              "properties": {
+                "tags": [
+                  "DS148264"
+                ]
+              }
+            },
+            {
+              "id": "glog-de0c7ff8-c2e3-4697-9ce4-fba2935fc9a4",
+              "help": {
+                "text": ""
+              },
+              "properties": {
+                "tags": [
+                  "DS148264"
+                ]
+              }
+            },
+            {
+              "id": "glog-77c0596b-1d65-4c60-bcca-c84052979656",
+              "help": {
+                "text": ""
+              },
+              "properties": {
+                "tags": [
+                  "DS148264"
+                ]
+              }
+            },
+            {
+              "id": "glog-aa2c9f8f-1136-426d-a298-4b8a15961f4c",
+              "help": {
+                "text": ""
+              },
+              "properties": {
+                "tags": [
+                  "DS149435"
+                ]
+              }
+            },
+            {
+              "id": "glog-6210db62-4154-426d-b00c-11b7fc229b42",
+              "help": {
+                "text": ""
+              },
+              "properties": {
+                "tags": [
+                  "DS148264"
+                ]
+              }
+            },
+            {
+              "id": "glog-8aeabec7-9c34-4e8e-81d6-650e8a7d6773",
+              "help": {
+                "text": ""
+              },
+              "properties": {
+                "tags": [
+                  "DS148264"
+                ]
+              }
+            },
+            {
+              "id": "glog-4d3b7deb-8f98-42b1-8971-8f33d9f02032",
+              "help": {
+                "text": ""
+              },
+              "properties": {
+                "tags": [
+                  "DS148264"
+                ]
+              }
+            },
+            {
+              "id": "glog-050d7a12-3cb9-4465-b902-57cf8d6f22a5",
+              "help": {
+                "text": ""
+              },
+              "properties": {
+                "tags": [
+                  "DS148264"
+                ]
+              }
+            },
+            {
+              "id": "glog-8eb45820-52b6-4ce3-ae8a-cabeb02a440e",
+              "help": {
+                "text": ""
+              },
+              "properties": {
+                "tags": [
+                  "DS149435"
                 ]
               }
             }
@@ -177,7 +298,7 @@
       "language": "en-US",
       "results": [
         {
-          "ruleId": "glog-1d646926-8fac-4e89-a9d9-af0af7f6914e",
+          "ruleId": "glog-d890fa5e-4627-4f35-8e2f-03bd268d159a",
           "kind": "fail",
           "level": "note",
           "message": {},
@@ -185,20 +306,20 @@
             {
               "physicalLocation": {
                 "artifactLocation": {
-                  "uri": "testing/testing_ztrsm.cpp"
+                  "uri": "src/core_zhbtype2cb.cpp"
                 },
                 "region": {
-                  "startLine": 213,
-                  "startColumn": 12,
-                  "endLine": 213,
-                  "endColumn": 63,
-                  "charOffset": 9300,
-                  "charLength": 51,
+                  "startLine": 150,
+                  "startColumn": 8,
+                  "endLine": 150,
+                  "endColumn": 37,
+                  "charOffset": 5227,
+                  "charLength": 29,
                   "snippet": {
-                    "text": "memcpy( hX, hBdev, sizeB*sizeof(magmaDoubleComplex)",
+                    "text": "memcpy(V(vpos+1), A(J1+1, st)",
                     "rendered": {
-                      "text": "memcpy( hX, hBdev, sizeB*sizeof(magmaDoubleComplex)",
-                      "markdown": "`memcpy( hX, hBdev, sizeB*sizeof(magmaDoubleComplex)`"
+                      "text": "memcpy(V(vpos+1), A(J1+1, st)",
+                      "markdown": "`memcpy(V(vpos+1), A(J1+1, st)`"
                     }
                   },
                   "sourceLanguage": "cpp"
@@ -214,16 +335,16 @@
               "artifactChanges": [
                 {
                   "artifactLocation": {
-                    "uri": "testing/testing_ztrsm.cpp"
+                    "uri": "src/core_zhbtype2cb.cpp"
                   },
                   "replacements": [
                     {
                       "deletedRegion": {
-                        "charOffset": 9300,
-                        "charLength": 51
+                        "charOffset": 5227,
+                        "charLength": 29
                       },
                       "insertedContent": {
-                        "text": "memcpy_s( hX, <size of  hX>,  hBdev,  sizeB*sizeof(magmaDoubleComplex)"
+                        "text": "memcpy_s(V(vpos+1), <size of V(vpos+1)>,  A(J1+1,  st)"
                       }
                     }
                   ]
@@ -240,7 +361,7 @@
           }
         },
         {
-          "ruleId": "glog-4dce771b-c8ec-467b-b266-3d9a3e668e42",
+          "ruleId": "glog-6fd477f6-6708-4bef-885e-953bbefe6cf2",
           "kind": "fail",
           "level": "note",
           "message": {},
@@ -248,20 +369,20 @@
             {
               "physicalLocation": {
                 "artifactLocation": {
-                  "uri": "testing/testing_ztrsm.cpp"
+                  "uri": "interface_cuda/alloc.cpp"
                 },
                 "region": {
-                  "startLine": 230,
-                  "startColumn": 16,
-                  "endLine": 230,
-                  "endColumn": 70,
-                  "charOffset": 10206,
-                  "charLength": 54,
+                  "startLine": 165,
+                  "startColumn": 14,
+                  "endLine": 165,
+                  "endColumn": 28,
+                  "charOffset": 4578,
+                  "charLength": 14,
                   "snippet": {
-                    "text": "memcpy( hX, hBlapack, sizeB*sizeof(magmaDoubleComplex)",
+                    "text": "malloc( size )",
                     "rendered": {
-                      "text": "memcpy( hX, hBlapack, sizeB*sizeof(magmaDoubleComplex)",
-                      "markdown": "`memcpy( hX, hBlapack, sizeB*sizeof(magmaDoubleComplex)`"
+                      "text": "malloc( size )",
+                      "markdown": "`malloc( size )`"
                     }
                   },
                   "sourceLanguage": "cpp"
@@ -272,21 +393,21 @@
           "fixes": [
             {
               "description": {
-                "text": "There are a number of conditions in which memcpy can introduce a vulnerability (mismatched buffer sizes, null pointers, etc.). More secure alternitives perform additional validation of the source and destination buffer"
+                "text": "If the value provided to malloc is the result of unsafe integer math, it can result in an exploitable condition. "
               },
               "artifactChanges": [
                 {
                   "artifactLocation": {
-                    "uri": "testing/testing_ztrsm.cpp"
+                    "uri": "interface_cuda/alloc.cpp"
                   },
                   "replacements": [
                     {
                       "deletedRegion": {
-                        "charOffset": 10206,
-                        "charLength": 54
+                        "charOffset": 4578,
+                        "charLength": 14
                       },
                       "insertedContent": {
-                        "text": "memcpy_s( hX, <size of  hX>,  hBlapack,  sizeB*sizeof(magmaDoubleComplex)"
+                        "text": "calloc(<number of elements>, <size of each element>)"
                       }
                     }
                   ]
@@ -303,7 +424,7 @@
           }
         },
         {
-          "ruleId": "glog-43dccc0f-8387-45b7-aee8-7d1356258de0",
+          "ruleId": "glog-ec00db16-10eb-4ced-8c8e-20c4bedca64a",
           "kind": "fail",
           "level": "warning",
           "message": {},
@@ -366,7 +487,7 @@
           }
         },
         {
-          "ruleId": "glog-4a5a55d6-06b6-472e-92f4-e9cfd9ae61bf",
+          "ruleId": "glog-b32552f9-27d5-400f-bb64-c2e7a89b1d47",
           "kind": "fail",
           "level": "warning",
           "message": {},
@@ -429,7 +550,196 @@
           }
         },
         {
-          "ruleId": "glog-03de624c-f42e-48be-b7b7-157bac0bd9f5",
+          "ruleId": "glog-81497cf1-ce16-4ea5-8078-f9271329bafe",
+          "kind": "fail",
+          "level": "note",
+          "message": {},
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "src/xhsgetrf_gpu.cpp"
+                },
+                "region": {
+                  "startLine": 122,
+                  "startColumn": 4,
+                  "endLine": 122,
+                  "endColumn": 32,
+                  "charOffset": 3708,
+                  "charLength": 28,
+                  "snippet": {
+                    "text": "memcpy(&h, &hf, sizeof(half)",
+                    "rendered": {
+                      "text": "memcpy(&h, &hf, sizeof(half)",
+                      "markdown": "`memcpy(&h, &hf, sizeof(half)`"
+                    }
+                  },
+                  "sourceLanguage": "cpp"
+                }
+              }
+            }
+          ],
+          "fixes": [
+            {
+              "description": {
+                "text": "There are a number of conditions in which memcpy can introduce a vulnerability (mismatched buffer sizes, null pointers, etc.). More secure alternitives perform additional validation of the source and destination buffer"
+              },
+              "artifactChanges": [
+                {
+                  "artifactLocation": {
+                    "uri": "src/xhsgetrf_gpu.cpp"
+                  },
+                  "replacements": [
+                    {
+                      "deletedRegion": {
+                        "charOffset": 3708,
+                        "charLength": 28
+                      },
+                      "insertedContent": {
+                        "text": "memcpy_s(&h, <size of &h>,  &hf,  sizeof(half)"
+                      }
+                    }
+                  ]
+                }
+              ]
+            }
+          ],
+          "properties": {
+            "DevSkimSeverity": "BestPractice",
+            "DevSkimConfidence": "High",
+            "tags": [
+              "API.DangerousAPI.ProblematicFunction"
+            ]
+          }
+        },
+        {
+          "ruleId": "glog-f1065b89-7d67-42ed-abd4-21b93301b013",
+          "kind": "fail",
+          "level": "note",
+          "message": {},
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "src/xhsgetrf_gpu.cpp"
+                },
+                "region": {
+                  "startLine": 113,
+                  "startColumn": 4,
+                  "endLine": 113,
+                  "endColumn": 33,
+                  "charOffset": 3526,
+                  "charLength": 29,
+                  "snippet": {
+                    "text": "memcpy(&tmp, &o, sizeof(half)",
+                    "rendered": {
+                      "text": "memcpy(&tmp, &o, sizeof(half)",
+                      "markdown": "`memcpy(&tmp, &o, sizeof(half)`"
+                    }
+                  },
+                  "sourceLanguage": "cpp"
+                }
+              }
+            }
+          ],
+          "fixes": [
+            {
+              "description": {
+                "text": "There are a number of conditions in which memcpy can introduce a vulnerability (mismatched buffer sizes, null pointers, etc.). More secure alternitives perform additional validation of the source and destination buffer"
+              },
+              "artifactChanges": [
+                {
+                  "artifactLocation": {
+                    "uri": "src/xhsgetrf_gpu.cpp"
+                  },
+                  "replacements": [
+                    {
+                      "deletedRegion": {
+                        "charOffset": 3526,
+                        "charLength": 29
+                      },
+                      "insertedContent": {
+                        "text": "memcpy_s(&tmp, <size of &tmp>,  &o,  sizeof(half)"
+                      }
+                    }
+                  ]
+                }
+              ]
+            }
+          ],
+          "properties": {
+            "DevSkimSeverity": "BestPractice",
+            "DevSkimConfidence": "High",
+            "tags": [
+              "API.DangerousAPI.ProblematicFunction"
+            ]
+          }
+        },
+        {
+          "ruleId": "glog-5985b6d8-08ad-4218-b6a8-fd6389f729c8",
+          "kind": "fail",
+          "level": "note",
+          "message": {},
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "src/core_zhbtype1cb.cpp"
+                },
+                "region": {
+                  "startLine": 132,
+                  "startColumn": 4,
+                  "endLine": 132,
+                  "endColumn": 36,
+                  "charOffset": 4445,
+                  "charLength": 32,
+                  "snippet": {
+                    "text": "memcpy( V(vpos+1), A(st+1, st-1)",
+                    "rendered": {
+                      "text": "memcpy( V(vpos+1), A(st+1, st-1)",
+                      "markdown": "`memcpy( V(vpos+1), A(st+1, st-1)`"
+                    }
+                  },
+                  "sourceLanguage": "cpp"
+                }
+              }
+            }
+          ],
+          "fixes": [
+            {
+              "description": {
+                "text": "There are a number of conditions in which memcpy can introduce a vulnerability (mismatched buffer sizes, null pointers, etc.). More secure alternitives perform additional validation of the source and destination buffer"
+              },
+              "artifactChanges": [
+                {
+                  "artifactLocation": {
+                    "uri": "src/core_zhbtype1cb.cpp"
+                  },
+                  "replacements": [
+                    {
+                      "deletedRegion": {
+                        "charOffset": 4445,
+                        "charLength": 32
+                      },
+                      "insertedContent": {
+                        "text": "memcpy_s( V(vpos+1), <size of  V(vpos+1)>,  A(st+1,  st-1)"
+                      }
+                    }
+                  ]
+                }
+              ]
+            }
+          ],
+          "properties": {
+            "DevSkimSeverity": "BestPractice",
+            "DevSkimConfidence": "High",
+            "tags": [
+              "API.DangerousAPI.ProblematicFunction"
+            ]
+          }
+        },
+        {
+          "ruleId": "glog-2bf740c3-daf6-4d8b-b456-ac1595c6b578",
           "kind": "fail",
           "level": "error",
           "message": {},
@@ -467,7 +777,7 @@
           }
         },
         {
-          "ruleId": "glog-33c5aa26-1ed6-4e98-9c73-c9982f292467",
+          "ruleId": "glog-8155eee3-deb7-4ec9-b458-d9a7b9f89f2b",
           "kind": "fail",
           "level": "error",
           "message": {},
@@ -505,7 +815,7 @@
           }
         },
         {
-          "ruleId": "glog-81e92ba1-9d98-485f-98b3-fc553ea9acfc",
+          "ruleId": "glog-76a9666b-adb7-4a8e-a109-38bee6d0ddfc",
           "kind": "fail",
           "level": "error",
           "message": {},
@@ -543,45 +853,7 @@
           }
         },
         {
-          "ruleId": "glog-1782e3af-d70f-42af-84ec-ccf15679da51",
-          "kind": "fail",
-          "level": "error",
-          "message": {},
-          "locations": [
-            {
-              "physicalLocation": {
-                "artifactLocation": {
-                  "uri": "example/example_v1.cpp"
-                },
-                "region": {
-                  "startLine": 34,
-                  "startColumn": 54,
-                  "endLine": 34,
-                  "endColumn": 62,
-                  "charOffset": 1285,
-                  "charLength": 8,
-                  "snippet": {
-                    "text": "RAND_MAX",
-                    "rendered": {
-                      "text": "RAND_MAX",
-                      "markdown": "`RAND_MAX`"
-                    }
-                  },
-                  "sourceLanguage": "cpp"
-                }
-              }
-            }
-          ],
-          "properties": {
-            "DevSkimSeverity": "Important",
-            "DevSkimConfidence": "High",
-            "tags": [
-              "Cryptography.PRNG.Weak"
-            ]
-          }
-        },
-        {
-          "ruleId": "glog-7f6d513f-673b-4909-ad44-e7502da4865e",
+          "ruleId": "glog-b0bf939a-158f-4f07-8f4d-d33f5ffd3728",
           "kind": "fail",
           "level": "error",
           "message": {},
@@ -619,7 +891,7 @@
           }
         },
         {
-          "ruleId": "glog-796db7d7-bf32-4856-ab1d-ce1a39dd3a0e",
+          "ruleId": "glog-1de07b21-765b-4c76-a965-156bf94767ab",
           "kind": "fail",
           "level": "error",
           "message": {},
@@ -631,16 +903,16 @@
                 },
                 "region": {
                   "startLine": 34,
-                  "startColumn": 35,
+                  "startColumn": 54,
                   "endLine": 34,
-                  "endColumn": 40,
-                  "charOffset": 1266,
-                  "charLength": 5,
+                  "endColumn": 62,
+                  "charOffset": 1285,
+                  "charLength": 8,
                   "snippet": {
-                    "text": "rand(",
+                    "text": "RAND_MAX",
                     "rendered": {
-                      "text": "rand(",
-                      "markdown": "`rand(`"
+                      "text": "RAND_MAX",
+                      "markdown": "`RAND_MAX`"
                     }
                   },
                   "sourceLanguage": "cpp"
@@ -657,7 +929,7 @@
           }
         },
         {
-          "ruleId": "glog-c026326e-0f84-4605-8c97-fbd065b2796e",
+          "ruleId": "glog-8368152a-69a5-46a7-8269-86762c2f4a01",
           "kind": "fail",
           "level": "error",
           "message": {},
@@ -695,7 +967,45 @@
           }
         },
         {
-          "ruleId": "glog-24174a18-9fc9-4bc4-b26c-3cc66ca73ead",
+          "ruleId": "glog-9745ee4c-7ca2-473c-8dc9-bb9e16c2600b",
+          "kind": "fail",
+          "level": "error",
+          "message": {},
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "example/example_v1.cpp"
+                },
+                "region": {
+                  "startLine": 34,
+                  "startColumn": 35,
+                  "endLine": 34,
+                  "endColumn": 40,
+                  "charOffset": 1266,
+                  "charLength": 5,
+                  "snippet": {
+                    "text": "rand(",
+                    "rendered": {
+                      "text": "rand(",
+                      "markdown": "`rand(`"
+                    }
+                  },
+                  "sourceLanguage": "cpp"
+                }
+              }
+            }
+          ],
+          "properties": {
+            "DevSkimSeverity": "Important",
+            "DevSkimConfidence": "High",
+            "tags": [
+              "Cryptography.PRNG.Weak"
+            ]
+          }
+        },
+        {
+          "ruleId": "glog-9352f8df-e792-4dc3-820c-935a47633126",
           "kind": "fail",
           "level": "error",
           "message": {},
@@ -733,7 +1043,7 @@
           }
         },
         {
-          "ruleId": "glog-d0eb6ced-6c70-4cc3-9fed-a903d3ae0c16",
+          "ruleId": "glog-45e2f302-f3a6-4489-b44d-8de601d5cf78",
           "kind": "fail",
           "level": "error",
           "message": {},
@@ -741,14 +1051,52 @@
             {
               "physicalLocation": {
                 "artifactLocation": {
-                  "uri": "testing/testing_zgemv_vbatched.cpp"
+                  "uri": "testing/testing_zherk_vbatched.cpp"
                 },
                 "region": {
-                  "startLine": 140,
-                  "startColumn": 33,
-                  "endLine": 140,
+                  "startLine": 138,
+                  "startColumn": 30,
+                  "endLine": 138,
                   "endColumn": 38,
-                  "charOffset": 5138,
+                  "charOffset": 4680,
+                  "charLength": 8,
+                  "snippet": {
+                    "text": "rand() %",
+                    "rendered": {
+                      "text": "rand() %",
+                      "markdown": "`rand() %`"
+                    }
+                  },
+                  "sourceLanguage": "cpp"
+                }
+              }
+            }
+          ],
+          "properties": {
+            "DevSkimSeverity": "Important",
+            "DevSkimConfidence": "High",
+            "tags": [
+              "Cryptography.PRNG.Weak"
+            ]
+          }
+        },
+        {
+          "ruleId": "glog-42dd250a-0d72-4415-8cc2-4f967fc4d195",
+          "kind": "fail",
+          "level": "error",
+          "message": {},
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "testing/testing_zherk_vbatched.cpp"
+                },
+                "region": {
+                  "startLine": 138,
+                  "startColumn": 30,
+                  "endLine": 138,
+                  "endColumn": 35,
+                  "charOffset": 4680,
                   "charLength": 5,
                   "snippet": {
                     "text": "rand(",
@@ -767,6 +1115,310 @@
             "DevSkimConfidence": "High",
             "tags": [
               "Cryptography.PRNG.Weak"
+            ]
+          }
+        },
+        {
+          "ruleId": "glog-de0c7ff8-c2e3-4697-9ce4-fba2935fc9a4",
+          "kind": "fail",
+          "level": "error",
+          "message": {},
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "testing/testing_zherk_vbatched.cpp"
+                },
+                "region": {
+                  "startLine": 137,
+                  "startColumn": 30,
+                  "endLine": 137,
+                  "endColumn": 35,
+                  "charOffset": 4637,
+                  "charLength": 5,
+                  "snippet": {
+                    "text": "rand(",
+                    "rendered": {
+                      "text": "rand(",
+                      "markdown": "`rand(`"
+                    }
+                  },
+                  "sourceLanguage": "cpp"
+                }
+              }
+            }
+          ],
+          "properties": {
+            "DevSkimSeverity": "Important",
+            "DevSkimConfidence": "High",
+            "tags": [
+              "Cryptography.PRNG.Weak"
+            ]
+          }
+        },
+        {
+          "ruleId": "glog-77c0596b-1d65-4c60-bcca-c84052979656",
+          "kind": "fail",
+          "level": "error",
+          "message": {},
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "testing/testing_zherk_vbatched.cpp"
+                },
+                "region": {
+                  "startLine": 137,
+                  "startColumn": 30,
+                  "endLine": 137,
+                  "endColumn": 38,
+                  "charOffset": 4637,
+                  "charLength": 8,
+                  "snippet": {
+                    "text": "rand() %",
+                    "rendered": {
+                      "text": "rand() %",
+                      "markdown": "`rand() %`"
+                    }
+                  },
+                  "sourceLanguage": "cpp"
+                }
+              }
+            }
+          ],
+          "properties": {
+            "DevSkimSeverity": "Important",
+            "DevSkimConfidence": "High",
+            "tags": [
+              "Cryptography.PRNG.Weak"
+            ]
+          }
+        },
+        {
+          "ruleId": "glog-aa2c9f8f-1136-426d-a298-4b8a15961f4c",
+          "kind": "fail",
+          "level": "error",
+          "message": {},
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "testing/testing_zherk_vbatched.cpp"
+                },
+                "region": {
+                  "startLine": 128,
+                  "startColumn": 12,
+                  "endLine": 128,
+                  "endColumn": 23,
+                  "charOffset": 4343,
+                  "charLength": 11,
+                  "snippet": {
+                    "text": "srand(1000)",
+                    "rendered": {
+                      "text": "srand(1000)",
+                      "markdown": "`srand(1000)`"
+                    }
+                  },
+                  "sourceLanguage": "cpp"
+                }
+              }
+            }
+          ],
+          "properties": {
+            "DevSkimSeverity": "Critical",
+            "DevSkimConfidence": "High",
+            "tags": [
+              "Cryptography.WeakRandomness"
+            ]
+          }
+        },
+        {
+          "ruleId": "glog-6210db62-4154-426d-b00c-11b7fc229b42",
+          "kind": "fail",
+          "level": "error",
+          "message": {},
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "testing/testing_zher2k_vbatched.cpp"
+                },
+                "region": {
+                  "startLine": 155,
+                  "startColumn": 30,
+                  "endLine": 155,
+                  "endColumn": 38,
+                  "charOffset": 5589,
+                  "charLength": 8,
+                  "snippet": {
+                    "text": "rand() %",
+                    "rendered": {
+                      "text": "rand() %",
+                      "markdown": "`rand() %`"
+                    }
+                  },
+                  "sourceLanguage": "cpp"
+                }
+              }
+            }
+          ],
+          "properties": {
+            "DevSkimSeverity": "Important",
+            "DevSkimConfidence": "High",
+            "tags": [
+              "Cryptography.PRNG.Weak"
+            ]
+          }
+        },
+        {
+          "ruleId": "glog-8aeabec7-9c34-4e8e-81d6-650e8a7d6773",
+          "kind": "fail",
+          "level": "error",
+          "message": {},
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "testing/testing_zher2k_vbatched.cpp"
+                },
+                "region": {
+                  "startLine": 155,
+                  "startColumn": 30,
+                  "endLine": 155,
+                  "endColumn": 35,
+                  "charOffset": 5589,
+                  "charLength": 5,
+                  "snippet": {
+                    "text": "rand(",
+                    "rendered": {
+                      "text": "rand(",
+                      "markdown": "`rand(`"
+                    }
+                  },
+                  "sourceLanguage": "cpp"
+                }
+              }
+            }
+          ],
+          "properties": {
+            "DevSkimSeverity": "Important",
+            "DevSkimConfidence": "High",
+            "tags": [
+              "Cryptography.PRNG.Weak"
+            ]
+          }
+        },
+        {
+          "ruleId": "glog-4d3b7deb-8f98-42b1-8971-8f33d9f02032",
+          "kind": "fail",
+          "level": "error",
+          "message": {},
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "testing/testing_zher2k_vbatched.cpp"
+                },
+                "region": {
+                  "startLine": 154,
+                  "startColumn": 30,
+                  "endLine": 154,
+                  "endColumn": 38,
+                  "charOffset": 5546,
+                  "charLength": 8,
+                  "snippet": {
+                    "text": "rand() %",
+                    "rendered": {
+                      "text": "rand() %",
+                      "markdown": "`rand() %`"
+                    }
+                  },
+                  "sourceLanguage": "cpp"
+                }
+              }
+            }
+          ],
+          "properties": {
+            "DevSkimSeverity": "Important",
+            "DevSkimConfidence": "High",
+            "tags": [
+              "Cryptography.PRNG.Weak"
+            ]
+          }
+        },
+        {
+          "ruleId": "glog-050d7a12-3cb9-4465-b902-57cf8d6f22a5",
+          "kind": "fail",
+          "level": "error",
+          "message": {},
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "testing/testing_zher2k_vbatched.cpp"
+                },
+                "region": {
+                  "startLine": 154,
+                  "startColumn": 30,
+                  "endLine": 154,
+                  "endColumn": 35,
+                  "charOffset": 5546,
+                  "charLength": 5,
+                  "snippet": {
+                    "text": "rand(",
+                    "rendered": {
+                      "text": "rand(",
+                      "markdown": "`rand(`"
+                    }
+                  },
+                  "sourceLanguage": "cpp"
+                }
+              }
+            }
+          ],
+          "properties": {
+            "DevSkimSeverity": "Important",
+            "DevSkimConfidence": "High",
+            "tags": [
+              "Cryptography.PRNG.Weak"
+            ]
+          }
+        },
+        {
+          "ruleId": "glog-8eb45820-52b6-4ce3-ae8a-cabeb02a440e",
+          "kind": "fail",
+          "level": "error",
+          "message": {},
+          "locations": [
+            {
+              "physicalLocation": {
+                "artifactLocation": {
+                  "uri": "testing/testing_zher2k_vbatched.cpp"
+                },
+                "region": {
+                  "startLine": 145,
+                  "startColumn": 12,
+                  "endLine": 145,
+                  "endColumn": 23,
+                  "charOffset": 5212,
+                  "charLength": 11,
+                  "snippet": {
+                    "text": "srand(1000)",
+                    "rendered": {
+                      "text": "srand(1000)",
+                      "markdown": "`srand(1000)`"
+                    }
+                  },
+                  "sourceLanguage": "cpp"
+                }
+              }
+            }
+          ],
+          "properties": {
+            "DevSkimSeverity": "Critical",
+            "DevSkimConfidence": "High",
+            "tags": [
+              "Cryptography.WeakRandomness"
             ]
           }
         }
